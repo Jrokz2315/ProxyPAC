@@ -1,8 +1,8 @@
 function FindProxyForURL(url, host) {
-    // If the hostname matches, send to proxy.
+    // If the hostname matches, use the proxy.
     if (shExpMatch(host, "*.dmsi") ||
         shExpMatch(host, "whatismyipaddress.com")) {
-        return "PROXY 138.91.158.33:3128";
+        return "PROXY";
     }
     // Else go directly without a proxy.
     return "DIRECT";
