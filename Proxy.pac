@@ -1,6 +1,6 @@
 function FindProxyForURL(url, host) {
   // Use proxy for hostnames ending with .dmsi
-  if (shExpMatch(host, "*.dmsi$")) {
+  if (shExpMatch(host, "*.dmsi")) {
     return "PROXY 138.91.158.33:3128";
   }
   // Use proxy for whatismyipaddress.com
